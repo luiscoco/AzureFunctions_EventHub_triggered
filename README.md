@@ -52,11 +52,13 @@
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/de8d1227-30e5-49e6-bf67-af387ff42932)
 
-## 4. 
+## 4. Stop the Azure Function in Azure Portal
 
 We stop the Azure Function before deploying from VSCode
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/1a7b0a1f-4514-461a-927c-466d2a44834a)
+
+## 5. Deploy the Azure Function with VSCode
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/0c14d245-b939-4e18-9a4b-a7bf175bae90)
 
