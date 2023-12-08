@@ -70,7 +70,61 @@ We stop the Azure Function before deploying from VSCode
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/9daca13e-2b30-4236-a3ff-085b7ccdc112)
 
-## 6. 
+## 6. Create the C# console application in Visual Studio 2022 for sending messages to Azure EventHub
+
+![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/1bc3ceac-73ed-474f-861f-9f453d801f7b)
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+using Azure.Messaging.EventHubs;
+using Azure.Messaging.EventHubs.Consumer;
+using Azure.Messaging.EventHubs.Producer;
+
+string EventHubConnectionString = "Endpoint=sb://myluiscoconamespace.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=cTO7Ut5V31JYTerHsBAtnrKkJRDkmPUz1+AEhKC1qjM=";
+string EventHubName = "myluiscoconamespace-96d407f675";
+
+await SendEventsAsync(5); // Specify the number of events you want to send
+
+async Task SendEventsAsync(int numberOfEvents)
+{
+    await using (var producerClient = new EventHubProducerClient(EventHubConnectionString, EventHubName))
+    {
+        List<EventData> eventBatch = new List<EventData>();
+
+        for (int i = 0; i < numberOfEvents; i++)
+        {
+            try
+            {
+                string messageBody = $"Message {i}";
+                var eventData = new EventData(Encoding.UTF8.GetBytes(messageBody));
+                eventBatch.Add(eventData);
+                Console.WriteLine($"Event added to batch: {messageBody}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error creating event: {ex.Message}");
+            }
+        }
+
+        try
+        {
+            await producerClient.SendAsync(eventBatch);
+            Console.WriteLine($"Batch of events sent successfully");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sending batch of events: {ex.Message}");
+        }
+    }
+}
+```
+
+## 7. Run the sending message application and monitor the output
+
+
 
 
 
