@@ -52,6 +52,11 @@
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/200bad2a-07c6-4f68-9823-343c178ecf91)
 
+We stop the Azure Function before deploying from VSCode
+
+![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/1a7b0a1f-4514-461a-927c-466d2a44834a)
+
+
 
 
 
