@@ -128,4 +128,6 @@ async Task SendEventsAsync(int numberOfEvents)
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/7d96ebd3-1e86-405a-9298-c804bb92f983)
 
+![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/3b810226-4cfd-44f1-9aa7-8db1679042cb)
 
+![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/eee5031a-d59e-4ed5-b976-473f5a2aae1f)
