@@ -46,7 +46,7 @@
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/5c13ee4e-adbb-428d-aad8-73a0042a59eb)
 
-## 3. 
+## 3. Create a configuration variable in Azure Function (Azure Portal)
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/70f873e0-8bb7-4c2e-81bc-a91c66520d15)
 
