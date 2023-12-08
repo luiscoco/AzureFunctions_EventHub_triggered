@@ -34,5 +34,6 @@
 
 ![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/b2fdaf38-eb4c-480e-9f11-da2d45706f6e)
 
+![image](https://github.com/luiscoco/AzureFunctions_EventHub_triggered/assets/32194879/0b6c7d5e-093f-4a9d-951f-c0e659bdb89c)
 
 
